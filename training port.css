@@ -1,0 +1,116 @@
+* { margin: 0;
+    padding: 0; 
+    box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+    
+    body { background: #f4f4f4; 
+           color: #222; }      
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1581091012184-1e17435b146f') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: gold;
+      margin-bottom: 10px;
+      animation: fadeInDown 2s ease;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      animation: fadeInUp 2s ease;
+    }
+
+    header button {
+      margin: 5px;
+      background: gold;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      color: black;
+      font-weight: bold;
+      transition: 0.3s;
+      animation: fadeInUp 2.5s ease;
+    }
+
+    header button:hover { 
+    transform: scale(1.2);
+    background: #fff; color: gold; }
+
+    @keyframes fadeInDown { 
+        from {opacity:0; 
+        transform: translateY(-50px);}
+        to {opacity:1; transform: translateY(0);} }
+
+
+    @keyframes fadeInUp {
+        from {opacity:0;
+        transform: translateY(50px);}
+        to {opacity:1; transform: translateY(0);} }
+
+    section { padding: 60px 10%; }
+    h2 { color: gold; 
+      margin-bottom: 20px; 
+      text-align: center; }
+
+    .about { text-align: center; }
+
+    .about p { 
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6; }
+
+    .services { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 20px;
+    text-align: center; }
+
+    .service-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .service-card:hover { transform: translateY(-5px); }
+
+    .service-card h3 {
+    margin-bottom: 10px; 
+    color: #222; }
+
+    .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px; }
+    .projects img {
+    width: 100%;
+    border-radius: 10px; 
+    transition: transform 0.3s; }
+
+    .projects img:hover { transform: scale(1.2); }
+
+    .contact { text-align: center; }
+    .contact a { 
+    display: inline-block;
+    margin: 10px;
+    background: gold;
+    color: black;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none; transition: 0.3s; }
+    .contact a:hover { background: #000; color: gold; }
+
+    footer { text-align: center; background: #222; color: #aaa; padding: 20px; font-size: 0.9rem; }
+
+    @media(max-width:768px) {
+    header h1 { font-size:2rem; }
+    header p { font-size:1rem; } }
