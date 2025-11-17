@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technix | Web Designer & Trainer</title>
+  <link rel="stylesheet" href="training port.css">
+</head>
+<body>
+
+  
+
+  <header>
+    <h1>Technix</h1>
+    <p>Web Designer & Trainer | Learn & Build Professional Websites</p>
+    <button onclick="scrollToSection('services')">Hire Me</button>
+    <button onclick="scrollToSection('contact')">Join My Class</button>
+  </header>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>I am Technix, a passionate Web Designer and Trainer. I help beginners create stunning websites and turn their skills into a source of income. Combining creativity and technical knowledge, I deliver projects and training that stand out.</p>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Services</h2>
+    <div class="service-card">
+      <h3>Website Design</h3>
+      <p>Custom websites for businesses, portfolios, and personal projects.</p>
+    </div>
+    <div class="service-card">
+      <h3>Online Training</h3>
+      <p>Step-by-step web design classes for beginners to get started fast.</p>
+    </div>
+    <div class="service-card">
+      <h3>Fashion Websites</h3>
+      <p>Stylish websites for fashion brands and boutiques.</p>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <img src="tech3.jpg.png" alt="">
+    <img src="router.jpg.jpg" alt="Fashion Website Sample">
+    <img src="about.png" alt="Portfolio Sample">
+    <a href="c"><img src="tech1.jpg.png" alt="Demo Project"></a>
+    <img src="web.jpg.png" alt="Demo Project">
+    <img src="tech2.jpg.png" alt="">
+    <img src="style 4.jpg.jpg" alt="">
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Reach out to join my next web design training or hire me for your project.</p>
+    <a href="https://wa.me/2349123958507" target="_blank">WhatsApp</a>
+    <a href="muhammadawwal8507@gmail.com.com">Email Me</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Technix. All Rights Reserved.
+  </footer>
+
+  <script src="training port.js">
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      header.style.backgroundPositionY = window.scrollY * 0.4 + 'px';
+    });
+  </script>
+
+</body>
+</html>
